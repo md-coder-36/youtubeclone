@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex boxes</title>
+</head>
+<style>
+    div {
+        text-align: center;
+    }
+</style>
+
+<body style="padding-bottom: 1000px;">
+
+    <div style="display: flex;
+                flex-direction: row;">
+
+        <div style="background-color: aqua;
+                    width: 200px;">
+            200 px <p>Text</p>
+        </div>
+
+        <div style="background-color: wheat;
+                    width: 75px;">
+            75 px
+        </div>
+
+    </div>
+
+
+    <div style="margin-top: 16px;
+                display: flex;
+                flex-direction: row;">
+
+        <div style="background-color: aqua;
+                    width: 50px;">
+            50 px <p>Text</p>
+        </div>
+
+        <div style="background-color: wheat;
+                    flex: 1;">
+            Flax: 1 (Use remaining space)
+        </div>
+
+        <div style="background-color: aqua;
+                    width: 75px;">
+            75 px
+        </div>
+
+    </div>
+
+
+    <div style="margin-top: 16px;
+                display: flex;
+                flex-direction: row;">
+
+        <div style="background-color: aqua;
+                    height: 100px;
+                    flex: 1;">
+            Flax: 1
+        </div>
+
+        <div style="background-color: wheat;
+                    flex: 1;">
+            Flax: 1
+        </div>
+
+        <div style="background-color: aqua;
+                    flex: 1;">
+            Flax: 1
+        </div>
+
+        <div style="background-color: wheat;
+                    flex: 1;">
+            Flax: 1
+        </div>
+
+    </div>
+
+
+
+    <div style="margin-top: 16px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                /* justify-content: space-evenly/space-around; */
+                ">
+
+        <div style="background-color: aqua;
+                    height: 100px;
+                    width: 100px;">
+            100 px
+        </div>
+
+        <div style="background-color: wheat;
+                    width: 100px;">
+            100 px
+        </div>
+
+        <div style="background-color: aqua;
+                    width: 100px;">
+            100 px
+        </div>
+
+        <div style="background-color: wheat;
+                    width: 100px;">
+            100 px
+        </div>
+
+    </div>
+
+
+
+    <div style="margin-top: 16px;
+                border: 2px solid gainsboro;
+                display: flex;
+                flex-direction: row;
+                /* justify-content: center/right/left; */
+                justify-content: space-evenly;
+                align-items: center;">
+
+        <div style="background-color: aqua;
+                    height: 100px;
+                    width: 100px;">
+            100 px
+            <p>[because height is specified]</p>
+        </div>
+
+        <div style="background-color: wheat;
+                    width: 100px;">
+            100 px
+        </div>
+
+        <div style="background-color: aqua;
+                    width: 100px;">
+            100 px
+        </div>
+
+        <div style="background-color: wheat;
+                    width: 100px;">
+            100 px
+        </div>
+
+    </div>
+
+
+
+    <div style="margin-top: 16px;
+                border: 2px solid gainsboro;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;">
+
+        <div style="background-color: aqua;
+                    width: 100px;">
+            100 px
+        </div>
+
+        <div style="background-color: wheat;
+                    width: 100px;">
+            100 px
+        </div>
+
+        <div style="background-color: aqua;
+                    width: 100px;">
+            100 px
+        </div>
+
+        <div style="background-color: wheat;
+                    width: 100px;">
+            100 px
+        </div>
+
+    </div>
+
+
+
+    <div style="margin-top: 16px;
+                border: 2px solid gainsboro;
+                height: 100px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;">
+
+        <div style="background-color: aqua;
+                    width: 100px;">
+            100 px
+        </div>
+
+        <div style="background-color: wheat;
+                    width: 100px;">
+            100 px
+        </div>
+
+    </div>
+
+    <p><b>Nested Flexbox : </b></p>
+
+    <div style="margin-top: 16px;
+                border: 2px solid gainsboro;
+                height: 100px;
+                display: flex;
+                flex-direction: row;
+                ">
+
+        <div style="display: flex;
+                    flex-direction: row;
+                    justify-content: center; 
+                    align-items: center; 
+                    background-color: aqua;
+                    width: 100px;">
+
+            <p style="background-color: rgb(255, 74, 74);">100 px</p>
+        </div>
+
+        <div style="background-color: wheat;
+                    width: 200px;">
+            100 px
+        </div>
+
+    </div>
+
+
+    <div style="margin-top: 16px;
+                border: 2px solid gainsboro;
+                height: 100px;
+                display: flex;
+                flex-direction: row;
+                ">
+
+
+        <div style="background-color: wheat;
+                    width: 100px;">
+            100 px
+        </div>
+
+        <div style="background-color: aqua;
+                    width: 200px;">
+
+            <div style="background-color: rgb(240, 240, 240);">100 px</div>
+
+            <div style="display: flex;
+                      flex-direction: row;
+                      justify-content: space-between; 
+                      ">
+                <p style="background-color: burlywood;">ROW 2</p>
+                <p style="background-color: burlywood;">ROW 2</p>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

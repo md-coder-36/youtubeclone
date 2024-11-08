@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Exercise 1</title>
+</head>
+
+<body style="padding-bottom: 3000px;">
+ 
+    <div style="position: fixed;
+                bottom: 20px;
+                right: 20px;
+
+                z-index: 2;
+                background-color: black;
+                color: white;
+                padding: 0 12px;
+                border-radius: 4px;">
+
+        <p>BOTTOM - RIGHT</p>
+
+    </div>
+
+    <div style="position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                width: 100px;
+
+                z-index: 1;
+                background-color: rgb(255, 238, 143);">
+
+        <p>RIGHT SIDE-BAR</p>
+
+    </div>
+    
+<!-- Below code comment for check uper code effect  --> 
+
+    <div style="position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+
+                display: flex;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+
+                background-color: rgba(0,0,0,0.8);
+                z-index: 3;">
+        <!-- Overlay/cover of entire page -->
+
+        <div style="background-color: #f0b7b7;
+                    border-radius: 8px;
+                    padding: 12px;
+                    margin: 12px;
+                    width: 300px;
+                    z-index: 4;">
+
+            <p style="font-size: 24px;
+                  margin: 0;">
+                <b>Model title</b>
+            </p>
+
+            <p style="margin: 12px 0 8px;">This is Model</p>
+
+            <button>Close</button>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
